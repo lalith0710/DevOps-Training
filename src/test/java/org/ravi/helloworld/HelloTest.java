@@ -19,7 +19,7 @@ public class HelloTest {
 	@BeforeTest
 	public void beforeTest() {
 		
-		System.setProperty("webdriver.firefox.marionette","C:\GIT Training\Test Project\DevOps-Training\resources\\geckodriver.exe");
+		System.setProperty("webdriver.firefox.marionette","\resources\\geckodriver.exe");
 		driver = new ChromeDriver();
 		driver.get("http://demoaut.com");
 		driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
